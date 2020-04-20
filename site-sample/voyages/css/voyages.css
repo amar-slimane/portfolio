@@ -1,0 +1,272 @@
+/* GENERAL */
+
+	html{
+		margin: 0;
+	}
+
+	body{
+		margin: 0;
+		font-family: GeosansLight;
+	}
+
+	@font-face{
+		font-family: GeosansLight;
+		src: url("../polices/GeosansLight.ttf")
+	}
+
+/* HEADER */
+
+	#menu, #croix{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 50px;
+		z-index: 4;
+		padding: 10px 20px;
+	}
+
+	header{
+		display: none;
+		position: fixed;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+		height: 100vh;
+		background-image: url("../Images/Accueil/1348150501_46967.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: 4;
+	}
+
+	header nav{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 55vw;
+		height: 80vh;
+	}
+
+	header ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		list-style-type: none;
+		padding: 0;
+		width: 100%;
+	}
+
+	header li {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		list-style-type: none;
+		width: 25vw;
+	}
+
+	.titre_menu a{
+		background-color: #000000;
+		color: #FFFFFF;
+		font-size: 30px;
+		width: 55vw;
+		text-align: center;
+	}
+
+	.nom_sous_menu{
+		background-color: #000000;
+		width: 100%;
+		padding: 10px 0;
+		text-align: center;
+		font-size: 30px;
+		color: #FFFFFF;
+	}
+
+	.nom_sous_menu_2{
+		background-color: #212121;
+		width: 100%;
+		margin-top: 20px;
+		padding: 7px 0;
+		text-align: center;
+		font-size: 25px;
+		color: #FFFFFF;
+	}
+
+	.sous_menu{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.nom_pays{
+		width: 100%;
+		text-align: center;
+	}
+
+	.nom_pays:hover{
+		background-color: #FFFFFF;
+	}
+
+	header li a {
+		display:block;
+		color: #000000;
+		background-color: #FFFFFF;
+		text-decoration:none;
+		font-size: 20px;
+		padding: 10px 0;
+	}
+
+/* FOOTER */
+
+	footer{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+		height: 200px;
+		background-color: #000000;
+		color: #FFFFFF;
+	}
+
+	#footer_menu nav{
+		height: 200px;
+	}
+
+	#footer_menu ul{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#footer_menu a{
+		color:#FFFFFF;
+		background-color: #000000;
+	}
+
+	#footer_a_propos{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 50vw;
+	}
+
+/* ACCUEIL */
+
+	#acceuil{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-image: url("../Images/Accueil/1348150501_46967.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	/* PROFIL */
+
+		#equipe{
+			margin-top: 40px;
+			box-shadow: 0 0 10px #000000;
+		}
+
+		#equipe h1{
+			width: 100vw;
+			max-width: 800px;
+			margin: 0;
+			padding: 20px;
+			font-size: 40px;
+			text-align: center;
+			background-color: #FFFFFF;
+		}
+
+		.personne{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+			width: 100vw;
+			max-width: 800px;
+			background-color: #FFFFFF;
+			padding: 20px;
+		}
+
+		.profil_image{
+			width: 35%;
+			border-radius: 50%;
+		}
+
+		.personne h2{
+			width: 40%;
+		}
+
+	/* CONTACT */
+
+		#contact{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items:center;
+			padding: 60px;
+			width: 100%;
+			font-family: GeosansLight;
+		}
+
+		#contact-2{
+			background-color: #FFFFFF;
+			width: 100vw;
+			max-width: 800px;
+			text-align: center;
+			padding: 20px;
+			box-shadow: 0 0 10px #000000;
+		}
+
+		#contact h1{
+			font-size: 2vw;
+			margin: 0;
+			padding-bottom: 20px;
+		}
+
+		#contact form{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items:center;
+			width: 100%;
+		}
+
+		#contact ::placeholder{
+			color: #000000;
+		}
+
+		#contact input[type=text], input[type=mail], textarea{
+			border: 1px solid #000000;
+			padding: 1vh;
+			width: 90%;
+			margin: 1vh 0;
+			background-color: rgba(0, 0, 0, 0);
+			font-size: 18px;
+			color: #000000;
+			font-family: GeosansLight;
+		}
+
+		#contact textarea{
+			height: 15vh;
+		}
+
+		#contact #button{
+			padding: 1vw;
+			margin: 1vh 0 0.5vh 0;
+			border-radius: 30px;
+			background-color: #000000;
+			font-size: 20px;
+			width: 30%;
+			color: #FFFFFF;
+			font-family: GeosansLight;
+			box-sizing: content-box;
+			cursor: pointer;
+		}

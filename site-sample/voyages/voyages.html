@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" media="screen and (min-device-width: 480px)" href="css/voyages.css"/>
+		<title>Voyage</title>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script>
+			$(document).ready(function() { 
+				$("#menu").click(function() { 
+					$('header').css("display", "flex");
+					$('#menu').css("display", "none");
+				});
+			});
+			
+			$(document).ready(function() { 
+				$("#croix").click(function() { 
+					$('header').css("display", "none");
+					$('#menu').css("display", "block");
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<img id="menu" alt="menu" src="Images/Menu.png"/>
+		<header>
+			<img id="croix" alt="menu" src="Images/Croix.png"/>
+			<nav>
+				<li class="titre_menu"><a href="voyages.html">Accueil</a></li>
+				<ul>
+					<li class="menu">
+						<a class="nom_sous_menu" href="#">Personnes</a>
+						<ul class="sous_menu">
+							<li>
+								<a class="nom_sous_menu_2" href="#">Luc van der MEIJDEN</a>
+								<ul class="sous_menu">
+									<li><a class="nom_pays" href="voyages/voyage1.html">Pays-Bas</a></li>
+								</ul>
+							</li>
+							
+							<li>
+								<a class="nom_sous_menu_2" href="#">Amar Slimane</a>
+								<ul class="sous_menu">
+									<li><a class="nom_pays" href="voyages/voyage2.html">Islande</a></li>
+								</ul>
+							</li>
+							
+							<li>
+								<a class="nom_sous_menu_2" href="#">Marceau Maubert</a>
+								<ul class="sous_menu">
+									<li><a class="nom_pays" href="voyages/voyage3.html">Japon</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					
+					<li class="menu">
+						<a class="nom_sous_menu" href="#">Continents</a>
+						<ul class="sous_menu">
+							<li>
+								<a class="nom_sous_menu_2" href="#">Europe</a>
+								<ul class="sous_menu">
+									<li><a class="nom_pays" href="voyages/voyage1.html">Pays-Bas</a></li>
+									<li><a class="nom_pays" href="voyages/voyage2.html">Islande</a></li>
+								</ul>
+							</li>
+							
+							<li>
+								<a class="nom_sous_menu_2" href="#">Asie</a>
+								<ul class="sous_menu">
+									<li><a class="nom_pays" href="voyages/voyage3.html">Japon</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<section id="acceuil">
+			<section id="equipe">
+				<h1>Equipe</h1>
+				<section class="personne">
+					<img class="profil_image" alt="Luc van der MEIJDEN" src="Images/Accueil/IMG_0890.jpg"/>
+					<h2>Luc van der MEIJDEN</h2>
+				</section>
+				
+				<section class="personne">
+					<img class="profil_image" alt="Luc van der MEIJDEN" src="Images/Accueil/20191025_130909.jpg"/>
+					<h2>Amar Slimane</h2>
+				</section>
+				
+				<section class="personne">
+					<img class="profil_image" alt="Luc van der MEIJDEN" src="Images/Accueil/55872194.jpg"/>
+					<h2>Marceau Maubert</h2>
+				</section>
+			</section>
+			
+			<section id="contact">
+				<section id="contact-2">
+					<h1>Contact</h1>
+					<form>
+						<input type="text" name="nom" placeholder="Nom">
+						<input type="mail" name="mail" placeholder="Mail">
+						<input type="text" name="objet" placeholder="Objet">
+						<textarea name="sujet" placeholder="Sujet"></textarea>
+						<input type="submit" id="button" name="envoyer" value="Envoyer">
+					</form>
+				</section>
+			</section>
+		</section>
+		
+		<footer>
+			<section id="footer_menu">
+				<nav>
+					<ul>
+						<li><a href="voyages/voyage3.html">Pays-Bas</a></li>
+						<li><a href="voyages/voyage2.html">Islande</a></li>
+						<li><a href="voyages/voyage3.html">Japon</a></li>
+					</ul>
+				</nav>
+			</section>
+			
+			<section id="footer_a_propos">
+				<h1>À Propos</h1>
+				<p>Ce site vous présente les différents pays dans lequels <br/> nous sommes allés et nos prochains voyage.</p>
+			</section>
+		</footer>
+	</body>
+</html>
